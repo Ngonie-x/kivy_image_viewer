@@ -151,3 +151,40 @@ BoxLayout:
                         size: self.size
                         pos: self.pos
                         radius: [10]
+    
+    # Footer container
+    BoxLayout:
+        size_hint_y: None
+        height: 30
+        height: 30
+        spacing: 5
+        Label:
+            text: "Copyright 2021"
+        
+        Button:
+            text: "Help"
+            size_hint_x: None
+            background_color: (0, 0, 0, 0)
+            canvas.before:
+                Color:
+                    rgba: (48/255, 49/255, 54/255, .5)
+                
+                RoundedRectangle:
+                    size: self.size
+                    pos: self.pos
+                    radius: [10]
+
+        Button:
+            text: "Contact Us"
+            size_hint_x: None
+            background_color: (0, 0, 0, 0)
+            canvas.before:
+                Color:
+                    rgba: (48/255, 49/255, 54/255, .5)
+                
+                RoundedRectangle:
+                    size: self.size
+                    pos: self.pos
+                    radius: [10]
+                
+            
